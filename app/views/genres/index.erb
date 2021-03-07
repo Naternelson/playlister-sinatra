@@ -1,0 +1,10 @@
+<ul class="collection">
+    <% @genres.each do |g| %>
+    <li class="collection-item">
+        <div class="Title"> <%= g.name %> </div>
+        <a href=<%= "/genres/#{g.slug}" %> > Open </a>
+    </li>
+
+    <% end %>
+
+</ul>

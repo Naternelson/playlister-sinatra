@@ -1,0 +1,9 @@
+<ul class="collection">
+    <% @songs.each do |s| %>
+    <li class="collection-item">
+        <div class="Title"> <%= s.name %> </div>
+        <a href=<%= "/songs/#{s.slug}" %> > Open </a>
+    </li>
+
+    <% end %>
+</ul>
